@@ -1,0 +1,19 @@
+{
+  "name": "listen-together-app",
+  "version": "1.0.0",
+  "description": "MuNote Listen Together - realtime YouTube listening room with Socket.IO",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "express": "^4.19.2",
+    "multer": "^2.1.1",
+    "socket.io": "^4.8.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

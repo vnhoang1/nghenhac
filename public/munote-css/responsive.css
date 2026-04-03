@@ -1,0 +1,551 @@
+
+
+@media only screen and (max-width: 1480px) {
+	.munote-playyer.fixed-player .jp-audio .jp-controls {left: 0;}
+}
+
+@media only screen and (max-width: 1366px) {
+	.music-banner-slider .slick-next, .music-banner-slider .slick-prev {display: none !important;}
+	.container-fluid {padding: 0 15px;}
+	.munote-playyer.fixed-player .jp-audio .jp-controls {left: 30px;}
+}
+
+@media only screen and (max-width: 1200px) {
+	.mll-auto {margin-left: initial;}
+	header nav {display: none;}
+	.header-content {padding: 10px 0;}
+	.abt-img {height: 100%;}
+	.abt-img img {object-fit: cover;height: 100%;}
+	.abt-text {padding: 61px 50px 54px;}
+	.block {padding: 100px 0;}
+	.pod-info {padding: 44px 35px 47px;}
+	div.maudio .audio-control .progress-bar {width: 270px;margin-left: 20px;}
+	.podcast-ep-info h2 {font-size: 28px;}
+	.load-more {margin-top: 70px;}
+	.post-title {font-size: 23px;line-height: 31px;}
+	.main-banner {padding: 120px 0 150px;}
+	header.pb {padding-top: 20px;}
+	.slide-text > h2 {font-size: 40px;line-height: 46px;}
+	.music-banner-slide .align-items-center {align-items: flex-start !important;}
+	.btns-lz li a.btn-default {padding: 0 30px;}
+	.service-col > p {padding: 0;}
+	.music-col > h3 {font-size: 22px;line-height: 26px;}
+	.songs-list li > h3 {font-size: 18px;}
+	.pod-thumbnail {height: 100%;}
+	.pod-thumbnail img {height: 100%;object-fit: cover;}
+	.podcast-series.v2 .pod-info {padding: 59px 40px;}
+	.donate-txt > h2 {font-size: 40px;line-height: 46px;}
+	.value-donate > span {font-size: 15px;}
+	.donate-txt .align-items-end {align-items: flex-start !important;}
+	.value-donate > h3 {margin-top: -5px;}
+	.donate-img:before {top: -50px;}
+	.blog-info > h2 {padding-right: 0;}
+	#twitter-widget-0 {height: 450px !important; }
+	.pt-carousel .slick-next, .pt-carousel .slick-prev {display: none !important;}
+	.newz-txt > h3 {font-size: 28px;line-height: 36px;}
+	.newsletter-form .input-field button {right: 5px;}
+	.section-title > h2 {font-size: 46px;}
+	.author-col {padding: 0 15px 21px;}
+	.pager-section {padding: 70px 0;}
+	.page-title {font-size: 55px;margin-bottom: 18px;}
+	.error-text > h2 {font-size: 280px;letter-spacing: 0;margin:0;}
+	.blog-single .blog-info blockquote {padding: 63px 80px 49px;}
+	.ul-video:before{display: none;}
+	.testi-comment > p {font-size: 24px;line-height: 36px;}
+	.testi-comment > h3 {font-size: 22px;}
+	.main-banner-hp3 {padding: 200px 0 120px;}
+	.wl-col {display: none;}
+	.wl-coll {display: none;}
+	.wl-txt {position: static;transform: inherit;margin: 0 auto;}
+	.app-txt > h2 {font-size: 36px;line-height: 42px;}
+	.price-section {padding: 100px 100px;}
+	.munote-playyer .jp-audio .jp-controls {justify-content: flex-start;left: 0;}
+	.munote-playyer .jp-title {margin-bottom: 20px;}
+	.munote-playyer .jp-audio .jp-controls {margin: 0;}
+	.munote-playyer .jp-gui.jp-interface {border-radius: 20px;}
+	.munote-playyer {bottom: -100px;}
+	.main-banner-hp3 {padding: 200px 0 120px;}
+	.block.list-sec {padding-top: 200px;}
+	.jp-controls.d-flex.flex-wrap.align-items-center.justify-content-center {justify-content: flex-start !important;}
+	.munote-playyer.fixed-player {bottom: 0;}
+	.munote-playyer.fixed-player .jp-audio .jp-controls {left: 0;justify-content: flex-start !important;}
+	.jp-controls.d-flex.flex-wrap.align-items-center.justify-content-end {justify-content: flex-start !important;}
+	.newsletter-sec {padding: 75px 0;}
+	.blog-info > h2 {font-size: 26px;line-height: 31px;}
+	.vid-capp > h3 {font-size: 19px;}
+	.app-txt {margin-top: -35px;}
+	.munote-playyer .jp-audio .jp-type-playlist .jp-progress {width: 45%;}
+	.munote-playyer .jp-audio .controls-sc {text-align: right;}
+}
+
+@media only screen and (max-width: 991px) {
+	.abt-img {height: auto;}
+	.pod-series {margin-bottom: 30px;}
+	.podcast-series {margin-bottom: -30px;}
+	.podcast-thumb:before {display: none;}
+	.podcast-episodes {text-align: center;}
+	.podcast-thumb {max-width: 300px;margin: 0 auto;margin-bottom: 40px;padding-right: 0;}
+	.post {margin-bottom: 50px;}
+	.blog-posts {margin-bottom: -50px;}
+	footer .widget {margin-bottom: 40px;}
+	.widget-contact ul li {display: block;border-bottom-color: transparent;}
+	.bottom-footer {text-align: center;}
+	.btm-links {text-align: center;margin-bottom: 25px;}
+	.copyright-txt {text-align: right;}
+	div.maudio .audio-control .progress-bar {width: 100%;margin-left: 0;}
+	div.maudio .audio-control {justify-content: center;}
+	.slide-img {display: none;}
+	.section-title > h3 {font-size: 32px;}
+	.listen-dv > ul {padding-left: 20px;}
+	.author-col > img {max-width: 50%;}
+	.author-col {margin-bottom: 120px;}
+	.authors-sec {margin-bottom: -120px;}
+	.donate-img {padding-left: 0;margin-top: 60px;}
+	.donate-img:before {display: none;}
+	.donate-txt .btn-default {float: right;}
+	.blog-posts.vv2 {margin-bottom: 0;margin-bottom: 50px;}
+	#twitter-widget-0 {width: 100% !important;}
+	.newsletter {text-align: center;}
+	.newsletter-form .input-field {max-width: 100%;display: flex;flex-wrap: wrap;}
+	.newsletter-form {padding-left: 0;margin-top: 30px;}
+	.input-field input {top: 0;}
+	.newsletter-sec {padding: 70px 0;}
+	.search-form {max-width: 500px;margin: 0 auto;}
+	.error-text > h3 {font-size: 60px;}
+	.page-content .blog-posts {margin-bottom: 0;}
+	.sidebar {margin-top: 50px;}
+	.widget-advertisement > img {max-width: 50%;object-fit: cover;max-height: 200px;}
+	.col-lg-8.order-1 {order:0;}
+	.get-touch {margin-bottom: 20px;}
+	.donate-info {padding: 60px 0 0;}
+	.donate-form-sec {padding: 70px 40px;}
+	.donate-info > h2 {font-size: 40px;line-height: 48px;}
+	.login-register {text-align: center;}
+	.or:before {display: none;}
+	.or {margin: 20px 0 30px;}
+	.or > span {position: static;transform: inherit;}
+	.pl-section {margin-top: 60px;}
+	.podcast-img {display: none;}
+	.podcast-banner-section {padding: 90px 0;}
+	.infor-txt {padding-right: 0;margin-bottom: 30px;}
+	.play-video {width: 140px;height: 140px;}
+	.play-video > span {height: 100px;width: 100px;line-height: 120px;top: 21px;}
+	.podcast-banner-section.v2 {padding: 60px 0;}
+	.team-mem {margin-top: 30px;}
+	.testi-img {max-width: 30%;margin: 0 auto;margin-top: 50px;}
+	.testimonial-slide {text-align: center;margin-bottom: 50px;}
+	.testi-comment > p {max-width: 100%;}
+	.service-col {margin-bottom: 50px;}
+	.app-img {display: none;}
+	.app-txt {text-align: center;padding-bottom: 70px;}
+	.app-txt > h2 {padding-right: 0;}
+	.app-txt p {max-width: 100%;}
+	.price-col {margin-bottom: 30px;}
+	.prices-cols .row {margin-bottom: -30px;}
+	.blog-post.v2 {margin-bottom: 50px;}
+	.main-banner-hp4.v5 {padding: 110px 0px 200px;}
+	.blog-posts.v-5 .row {margin-bottom: 0;}
+	.blog-posts.v-5 {margin-bottom: 50px;}
+	.main-banner-hp4.v6 .banner-text-hp3 {padding: 0 75px;}
+	.main-banner-hp4.v6 {padding: 105px 0 210px;}
+	.music-player .maudio {border-radius: 0;}
+	.widget-advertisement > img {width: 100%;max-width: 100%;}
+	.munote-playyer .jp-audio .jp-controls {justify-content: center;}
+	.controls-sc {display: flex;flex-wrap: wrap;justify-content: center;}
+	.munote-playyer .jp-volume-controls {margin: 0;}
+	.controls-sc {align-items: center;}
+	.munote-playyer .jp-audio .jp-type-playlist .jp-time-holder {height: auto;}
+	.munote-playyer .jp-audio .jp-type-playlist .jp-toggles {top: 1px;}
+	.munote-playyer .jp-audio .jp-play {width: 80px;height: 80px;line-height: 88px;}
+	.song-title {text-align: left;}
+	.munote-playyer .jp-title {display: inline-block;}
+	.munote-playyer .jp-gui.jp-interface {padding: 15px 45px 10px;}
+	.block.list-sec {padding-top: 180px;}
+	.banner-text-hp3 > h2 {font-size: 42px;line-height: 48px;}
+	.main-banner-hp3 {text-align: center;}
+	.main-banner-hp3 .banner-text-hp3 {max-width: 100%;}
+	.jp-controls.d-flex.flex-wrap.align-items-center.justify-content-center {justify-content: center !important;}
+	.munote-playyer.fixed-player .jp-audio .jp-controls {justify-content: center !important;}
+	.jp-controls.d-flex.flex-wrap.align-items-center.justify-content-end {justify-content: center !important;}
+	.album-img {display: none;}
+	.musicc-controls {width: 100%;}
+	.banner-text > h2 {font-size: 52px;}
+	.banner-text p {font-size: 18px;}
+	.main-banner.landing-v {padding: 100px 0;}
+	.landing-footer {padding: 70px 0;}
+	.banner-text ul li .btn-default {font-size: 14px;}
+	.service-col {margin-bottom: 0;}
+	.section-title.v2 > h3 {line-height: 40px;}
+	.price-section {margin-top: 60px;}
+	.app-txt > h2 {max-width: 100%;}
+	.services.v2 .service-col {margin-bottom: 50px;}
+	.services.v2 .row:nth-child(1) {margin-bottom: -50px;}
+	.top-footer {padding: 77px 0 40px;}
+	.bottom-footer  {padding: 30px 0;}
+}
+
+@media only screen and (max-width: 768px) {
+	.tp-links {text-align: center;margin-bottom: 20px;}
+	.top-header {padding: 15px 0;}
+	.banner-text > h2 {font-size: 40px;}
+	.banner-text p {font-size: 17px;margin-bottom: 40px;}
+	.main-banner {padding: 90px 0 120px;}
+	.banner-text ul li .btn-default {padding: 0 30px;line-height: 47px;height: 50px;font-size: 14px;}
+	.section-title > h2 {font-size: 44px;}
+	div.maudio .audio-control .volume-bar {display: none;}
+	div.maudio .audio-control .progress-bar {width: 255px;}
+	.load-more {margin-top: 40px;}
+	.blog-posts {text-align: center;}
+	.btm-links li {margin-bottom: 10px;}
+	.btm-links {margin-bottom: 15px;}
+	.top-footer {text-align: left;}
+	.pod-info {text-align: center;}
+	.songs-list li {justify-content: center;}
+	.songs-list .mm-audio {width: 50px;}
+	.songs-list li > h3 {width: calc(100% - 50px);}
+	.abt-text {text-align: center;padding: 70px 50px 54px;}
+	.post p {padding-right: 0;}
+	div.maudio .audio-control .progress-bar {width: 100%;margin-left: 0;}
+	div.maudio .audio-control {justify-content: center;}
+	.slide-text > h2 {padding-right: 40px;}
+	.service-col {margin-bottom: 50px;}
+	.services .row {margin-bottom: -50px;}
+	.listen-dv > h3 {width: 100%;margin-bottom: 20px;}
+	.listen-dv > ul {padding-left: 0;width: 100%;}
+	.listen-dv > ul li {margin-bottom: 15px;}
+	.listen-dv > ul {margin-bottom: -15px;}
+	.pod-series:nth-child(2n) .row .col-lg-6:nth-child(1) {order:0;}
+	.author-col > img {margin-top: -50px;}
+	.author-col {margin-bottom: 70px;}
+	.authors-sec {margin-top: 80px;}
+	.donate-txt {text-align: center;}
+	.donate-txt .btn-default {float: none;margin-top: 30px;}
+	.blog-posts.vv2 .blog-info {text-align: left;}
+	.blog-posts.vv2 .align-items-center {align-items: flex-start !important;}
+	.blog-posts.vv2 .blog-info > h2 {font-size: 24px;line-height: 30px;}
+	.pt-logo > img {max-width: 60%;}
+	.value-donate > h3 {margin-bottom: 12px;}
+	.page-content .blog-info {text-align: left;}
+	.page-content .blog-post .align-items-center {align-items: flex-start !important;}
+	.page-content .blog-info > h2 {font-size: 24px;line-height: 30px;}
+	.page-content .blog-info > p {font-size: 16px;line-height: 22px;}
+	.blog-single .blog-info blockquote {padding: 63px 50px 49px;}
+	.points li {font-size: 18px;}
+	.page-content .blog-single .blog-info > p {font-size: 18px;line-height: 30px;}
+	.comments-list ul {padding-left: 20px;}
+	.comnt-info > span {font-size: 14px;}
+	.donate-info > h2 {max-width: 100%;}
+	.alert-notice > span {max-width: 90%;vertical-align: middle;}
+	.donate-form-sec > p {line-height: 20px;margin-bottom: 20px;}
+	.custom-amount {flex: 0 0 100%;max-width: 100%;margin-top: 20px;}
+	.amount-calc > ul {max-width: 100%;flex: 0 0 100%;}
+	.amount-calc > ul li {width: calc(100% / 4 - 8px);}
+	.page-title {font-size: 44px;}
+	.breadcrumb li a, .breadcrumb li span {font-size: 16px;}
+	.pl-section .section-title > h2{font-size: 32px;}
+	.sponsor-txt > h2 {font-size: 34px;line-height: 46px;margin-bottom: 30px;}
+	.sponsor-txt {padding-top: 50px;}
+	.inforr-img{margin-bottom: 15px;}
+	.mb-70 {margin-bottom: 40px;}
+	.row.mb-70 + .row {margin-bottom: -30px; }
+	.album-img {display: none;}
+	.album-img + .musicc-controls {width: 100%;}
+	.ul-head > h2 {font-size: 30px;line-height: 36px;}
+	.testimonial-slider {margin: -20px 0;}
+	.block {padding: 80px 0;}
+	.services.v2 .service-col > h3 {padding: 0;}
+	.service-col > h3 {font-size: 24px;line-height: 28px;}
+	.service-col > p {line-height: 24px;}
+	.services.v2 .row {margin-bottom: 0;}
+	.price-section {padding: 70px 40px;}
+	.section-title.v2 > h3 {font-size: 36px;}
+	.posted_by::before {left: 50%;transform: translateX(-50%);}
+	.blog-posts .load-more {margin-bottom: 40px;}
+	.main-banner-hp4 {padding: 200px 0 260px;}
+	.banner-text-hp3 > h2 {font-size: 42px;line-height: 46px;}
+	.listen-on-platforms .listen-dv > h3 {margin-bottom: 30px;}
+	.listen-on-platforms {bottom: 20px;}
+	.authors-sec.v5 {margin-bottom: -75px;}
+	.donate-txt .btn-default {margin-top: 0;}
+	.donate-txt .align-items-end {align-items: center !important}
+	.blog-posts.v-5 .blog-info {text-align: left;}
+	.blog-posts.v-5 .blog-info > h2 {font-size: 24px;line-height: 30px;}
+	.music-player .maudio {border-radius: 0;}
+	.main-banner-hp4.v5 {padding: 75px 0px 250px;}
+	.main-banner-hp4.v6 .banner-text-hp3 > h2 {font-size: 32px;line-height: 40px;}
+	.main-banner-hp4.v6 {padding: 75px 0 230px;}
+	.main-banner-hp4.v5.v7 .banner-text-hp3 > h2 {font-size: 36px;line-height: 46px;}
+	.jp-controls.d-flex.flex-wrap.align-items-center.justify-content-start {justify-content: center !important;}
+	.musicc-controls .munote-playyer .jp-title {font-size: 24px;margin-bottom: 10px;}
+	.authors-sec.author-page {margin-top: 55px;}
+	.author-page .author-col {margin-bottom: 80px;}
+	.author-page .row {margin-bottom: -80px}
+	.authors-sec.author-page {margin-bottom: 0;}
+	.section-title.v-land > h2 {font-size: 34px;}
+	.copyright-txt {padding-top: 0;}
+	.songs-list li {display: block;}
+	.songs-list .mm-audio {margin: 0 auto;}
+	.songs-list li > h3 {width: 100%;margin-top: 10px;margin-bottom: 10px;padding-left: 0;}
+	.slide-text > span {font-size: 18px;}
+	.section-title > h3 br {display: none;}
+	.services .row + .row {margin-bottom: 0;}
+	p {font-size: 16px;}
+	.blog-info > h2 {margin-bottom: 10px;}
+	iframe#twitter-widget-0 {height: 350px !important; }
+	.main-banner-hp3 {padding-bottom: 80px;}
+	.song-title {text-align: center;}
+	.album-img + .musicc-controls {padding: 20px 0;}
+}
+
+@media only screen and (max-width: 576px) {
+	.header-content .btn-default {padding: 0 20px;}
+	.abt-text {padding: 70px 20px 54px;}
+	.abt-text > h2 {font-size: 32px;line-height: 40px;}
+	.block {padding: 70px 0;}
+	.section-title {margin-bottom: 50px;}
+	.podcast-ep-info h2 {line-height: 36px;}
+	div.maudio .audio-control .progress-bar {width: 160px;}
+	.podcast-ep-info p {line-height: 27px;}
+	div.maudio .audio-control .progress-bar {width: 100%;margin-left: 0;}
+	div.maudio .audio-control {justify-content: center;}
+	.section-title > h3 {font-size: 26px;}
+	.services {margin-bottom: 0;}
+	.authors-sec {margin-bottom: -70px;}
+	.radio-stations table thead th {display: none;}
+	.radio-stations table thead th:nth-child(1) {display: block;}
+	.radio-stations table tr td {display: none;}
+	.radio-stations table tr td:nth-child(1) {display: block;}
+	.blog-posts.vv2 .blog-info {text-align: center;}
+	.blog-posts.vv2 .blog-thumbnail {margin-bottom: 30px;}
+	.ms-title {text-align: center;}
+	.ms-title:before {left: 50%;transform: translateX(-50%);}
+	.radio-stations table thead th:nth-child(1) {text-align: center !important;padding-left: 0;padding-right: 0;}
+	.radio-stations table td {padding-left: 0;padding-right: 0;}
+	.radio-stations .mm-audio {width: 100%;}
+	.radio-player > h3 {display: block;width: 100%;padding-left: 0;}
+	.radio-player {text-align: center;}
+	.radio-player .mm-audio div.maudio .audio-control {margin: 0 auto;margin-bottom: 20px;}
+	.radio-stations table tbody td:first-child {padding-left: 0;}
+	.blog-posts.vv2 .blog-info > h2 {padding: 0 20px;}
+	.slide-text > h2 {padding-right: 0;}
+	.music-col {text-align: center;}
+	.pager-section {padding: 45px 0;}
+	.page-title {font-size: 40px;}
+	.breadcrumb li a, .breadcrumb li span {font-size: 16px;}
+	.page-content .blog-post .blog-thumbnail {margin-bottom: 30px;}
+	.page-content .blog-post, .page-content .blog-info {text-align: left;}
+	.sidebar .widget-title {text-align: left;}
+	.sidebar {text-align: left;}
+	.sidebar .wid-info {text-align: left;}
+	.posted_by:before {left: 50%;transform: translateX(-50%);}
+	.mb-30 {margin-bottom: 30px;}
+	.social_links {text-align: center !important;}
+	.comnt-info {max-width: 100%;margin-top: 20px;padding-left: 0;}
+	.post-comments {text-align: left;}
+	.past-comments {text-align: left;}
+	.comnt-img {margin: 0 auto;}
+	.comments-list ul {padding-left: 0;}
+	.comnt-info > h3 {width: 100%;margin-bottom: 10px;}
+	.wd-recent-video .mss-player {left: 50%;transform: translateX(-50%);}
+	.sb-title {font-size: 28px;}
+	.donate-section {text-align: center;}
+	.donate-info > h2 {font-size: 30px;line-height: 36px;}
+	.dd-title:before {left: 50%;transform: translateX(-50%);}
+	.alert-notice > span {margin-top: 10px;}
+	.custom-amount > span {position: relative;left: -10px;}
+	.pl-section .section-title > h2 {font-size: 28px;}
+	.sponsor-txt {padding-top: 30px;}
+	.play-video {width: 100px;height: 100px;}
+	.play-video > span {width: 60px;height: 60px;line-height: 70px;}
+	.play-video > span i {font-size: 26px;}
+	.section-title > h2 {font-size: 34px;}
+	.abut-sec {text-align: center;}
+	.mt-80 {margin-top: 50px;}
+	.music-show > h3 {font-size: 18px;}
+	.wl-txt > h2 {font-size: 40px;line-height: 44px;}
+	.app-txt > h2 {font-size: 30px;line-height: 40px;}
+	.section-title.v2 > h3 {line-height: 40px;}
+	.section-title.v2 > span {margin-bottom: 15px;}
+	.section-title.v2 {margin-bottom: 50px;}
+	.main-banner-hp4.v5 .banner-text-hp3 {text-align: center;}
+	.main-banner-hp4.v5 .banner-text-hp3 > h2 {font-size: 38px;line-height: 46px;}
+	.listen-on-platforms .listen-dv > h3 {text-align: center;}
+	.value-donate {margin-bottom: 30px;}
+	.blog-posts.v-5 .blog-thumbnail {margin-bottom: 30px;}
+	.blog-posts.v-5 {text-align: center;}
+	.blog-posts.v-5 .blog-info {text-align: center;}
+	.main-banner-hp4.v6 .banner-text-hp3 > h2 {font-size: 26px;line-height: 36px;}
+	.banner-text-hp3 > h2 {font-size: 32px;line-height: 40px;}
+	.munote-playyer .jp-gui.jp-interface {padding: 15px 25px 10px;}
+	.main-banner-hp3 {padding: 200px 0 120px;}
+	.wl-txt p {font-size: 18px;line-height: 28px;margin-bottom: 35px;}
+	.musicc-controls .munote-playyer .jp-title {font-size: 20px;}
+	.banner-text > h2 {font-size: 36px;}
+	.main-banner.landing-v {padding: 80px 0;}
+	.section-title.v-land > h2 {font-size: 28px;margin-bottom: 10px;}
+	.landing-footer {padding: 40px 0;}
+	.section-title > h3 {font-size: 32px;line-height: 32px;}
+	.wl-txt > span {font-size: 18px;}
+	.newsletter-sec {padding: 55px 0;}
+	.sponsor-txt > h2 {font-size: 28px;line-height: 40px;}
+	.section-title.v2 > h3 {font-size: 30px;line-height: 36px;}
+	.main-banner-hp3 {padding-bottom: 80px;}
+	.btm-logo {margin-bottom: 20px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.top-header .social-links {display: none;}	
+	.tp-links {display: none;}
+	.top-header {text-align: center;}
+	.login {line-height: inherit;}
+	.top-header {padding: 10px 0 15px;}
+	.header-content .btn-default {display: none;}
+	.menu-btn {margin-right: 0;}
+	.banner-text > h2 {font-size: 32px;}
+	.banner-text ul li .btn-default {padding: 0 22px;}
+	.banner-text p {margin-bottom: 30px;}
+	.main-banner {padding: 55px 0 100px;}
+	.abt-text > h2 {font-size: 24px;line-height: 32px;margin-bottom: 35px;}
+	.abt-text > span {font-size: 14px;}
+	.presented ul li {margin-bottom: 10px;}
+	.abt-text {padding: 70px 20px 30px;}
+	.pod-info > h3 {font-size: 28px;}
+	.songs-list li > h3 {font-size: 16px;line-height: 20px;}
+	.songs-list li {margin-bottom: 20px;}
+	.songs-list {margin-bottom: 40px;}
+	.pod-info > h4 {font-size: 24px;}
+	.pod-info {padding: 44px 15px 47px;}
+	.section-title > h2 {font-size: 32px;}
+	.section-title > span {font-size: 16px;}
+	.pod-meta li {font-size: 16px;}
+	.wd-links li a {font-size: 16px;}
+	.top-footer {padding: 60px 0 15px;}
+	.copyright-txt {font-size: 14px;line-height: 24px;}
+	.slide-text > h2 {padding-right: 0;font-size: 30px;line-height: 35px;}
+	.pod-meta li {font-size: 14px;margin-right: 16px;}
+	.btns-lz li {display: block;text-align: left;margin-right: 0;margin-bottom: 10px;}
+	.slide-text > p {margin-top: 20px;}
+	.section-title > h3 {font-size: 26px;font-weight: 500;line-height: 33px;}
+	.podcast-series.v2 .pod-info {padding: 35px 40px;}
+	.donate-txt > h2 {font-size: 32px;line-height: 40px;}
+	.section-title > strong {font-size: 25px;}
+	.blog-posts.vv2 .blog-info > h2 {padding: 0;}
+	.newz-txt > h3 {font-size: 22px;line-height: 28px;}
+	.newsletter-form .input-field button {position: relative;margin-top: 20px;top: auto;left: auto;}
+	.newsletter-form .input-field {height: auto;}
+	.newsletter-form span.env {display: none;}
+	.newsletter-form .input-field input {width: 100%;height: 60px;border-radius: 50px;background-color: #fff;}
+	.newsletter-form .input-field {background-color: inherit;}
+	.newsletter-form {text-align: center;}
+	.newsletter-form .input-field {justify-content: center;}
+	.ms-title {font-size: 32px;}
+	.service-col > h3 {font-size: 24px;}
+	.error-text > h2 {font-size: 150px;left: 0;}
+	.error-text > h3 {font-size: 42px;}
+	.error-text > p {font-size: 18px;line-height: 26px;}
+	.search-form button {position: static;margin-top: 10px;}
+	.error-text > i::before {font-size: 100px;}
+	.pagination {margin-top: 50px;}
+	.wid-info > h3 {padding-right: 0;}
+	.vid-capp > h3 {font-size: 20px;}
+	.vid-capp {bottom: 15px;}
+	.blog-post.v2 .blog-info > h2 {font-size: 22px;line-height: 30px;}
+	.munote-pagination.v2 .pagination {margin-top: 0;}
+	.add-img {margin-bottom: 25px;}
+	.blog-post.v2 .like-post {width: 70px;height: 70px;}
+	.blog-post.v2 .like-post i {margin-bottom: -33px;}
+	.page-content .blog-single .blog-info > p {line-height: 28px;}
+	.blog-single .blog-info blockquote {padding: 63px 20px 49px;}
+	.listen-podcast > h2 {font-size: 26px;line-height: 35px;}
+	.listen-podcast {padding: 45px 20px 50px;}
+	.widget-advertisement > img {max-width: 100%;}
+	.pp-title {font-size: 28px;}
+	.get-touch {padding: 44px 25px 50px;}
+	.sb-title {font-size: 24px;line-height: 30px;}
+	.contact-page-form {padding: 44px 25px 50px 25px;}
+	.map-sec iframe {height: 250px;}
+	.breadcrumb li {padding: 0 10px;}
+	.donate-info > span {font-size: 14px;}
+	.donate-info > span i:before {font-size: 14px;}
+	.donate-info {padding: 40px 0 0;}
+	.donate-info > h2 {font-size: 24px;line-height: 32px;}
+	.donate-info p {line-height: 28px;}
+	.dd-title {font-size: 28px;}
+	.alert-notice {padding: 20px 10px 18px;}
+	.amount-calc > ul li {width: 100%;margin-bottom: 5px;}
+	.select-payment > h3 {font-size: 18px;}
+	.donate-form-sec {padding: 50px 20px;}
+	.lg-form .form-group button + a {margin-left: 10px;}
+	.mm-title {font-size: 30px;}
+	.pl-section .btn-default {margin-top: 50px;}
+	.lg-form .form-group button + a {font-size: 15px;}
+	.page-title {font-size: 32px;}
+	.sponsor-txt > h2 {font-size: 28px;line-height: 36px;}
+	.sponsor-txt {padding-top: 20px;}
+	.slide-text > span {font-size: 26px;}
+	.featez-list li {font-size: 16px;line-height: 22px;}
+	.featez-list {margin: 30px 0 40px;}
+	.podcast-banner-section {padding: 65px 0;}
+	.musicc-controls {padding: 0 15px;top: 0;}
+	.musicc-controls > h2 {font-size: 20px;}
+	.jp-audio .jp-controls {width: 100%;margin-bottom: 20px;}
+	.jp-audio .jp-type-playlist .jp-progress {margin-left: 0;width: 100%;margin-bottom: 10px;}
+	.jp-audio .jp-type-playlist .jp-time-holder {padding-left: 0;top: 0;}
+	.jp-volume-controls {top: 0;}
+	.jp-play, .jp-audio .jp-play {margin: 0 auto;float: none;}
+	.musicc-controls > h2 {text-align: center;}
+	.jp-playlist {padding: 32px 20px 40px;}
+	.jp-playlist-item {padding-left: 25px;font-size: 13px;}
+	.play-video {background:transparent;}
+	.full-width {max-width: 100%;flex: 0 0 100%;}
+	.testi-comment > h3 {font-size: 18px;}
+	.testi-img {max-width: 50%;}
+	.price-section {padding: 50px 15px;}
+	.section-title.v2 > span {font-size: 16px;}
+	.section-title.v2 > h3 {font-size: 30px;}
+	.price-col {padding: 52px 20px 15px;}
+	.social-links {display: none;}
+	.banner-text-hp3 > h2 {font-size: 34px;line-height: 40px;}
+	.main-banner-hp4 {padding: 175px 0 370px;}
+	.listen-on-platforms .listen-dv > ul li {display: block;}
+	.main-banner-hp4.v5 .banner-text-hp3 > h2 {font-size: 30px;line-height: 38px;}
+	.main-banner-hp4.v5 {padding: 75px 0px 365px;}
+	.main-banner-hp4.v5 .listen-dv > ul {text-align: center;}
+	.main-banner-hp4.v6 .banner-text-hp3 {padding: 0;}
+	.banner-post-slider .slick-next, .banner-post-slider .slick-prev {display: none !important;}
+	.main-banner-hp4.v6 {padding: 75px 0 350px;}
+	.main-banner-hp4.v5.v7 .banner-text-hp3 > h2 {font-size: 30px;line-height: 40px;}
+	.main-banner-hp3 {padding: 175px 0 120px;}
+	.munote-playyer .jp-title {font-size: 16px;}
+	.munote-playyer .jp-audio .jp-controls {margin-bottom: 20px;}
+	.munote-playyer .jp-audio .jp-type-playlist .jp-progress {width: 100%;margin-bottom: 15px;}
+	.munote-playyer .jp-audio .jp-play {margin-right: 40px;}
+	.wl-txt > h2 {font-size: 32px;line-height: 39px;}
+	.wl-txt > span {font-size: 26px;margin-top: 30px;}
+	.listen-on-platforms {z-index: -1;}
+	.munote-playyer .jp-audio .jp-play {margin: 0;}
+	.munote-playyer .jp-next {left: -7px;}
+	.musicc-controls .munote-playyer .jp-title {font-size: 15px;}
+	.jp-audio .jp-interface, .jp-audio-stream .jp-interface {height: auto;}
+	.jp-gui.jp-interface.play-list-style {padding-top: 15px;padding-bottom: 15px;}
+	.musicc-controls .munote-playyer .jp-audio .jp-controls {margin-bottom: 20px;margin-top: 10px;}
+	.authors-sec.author-page {margin-top: 40px;}
+	.responsive-mobile-menu {width: 100%;}
+	.main-banner.landing-v {padding: 60px 0;}
+	.btn-default {font-size: 14px;height: 46px;line-height: 46px;}
+	.banner-text ul li {margin-bottom: 10px;}
+	.section-title {margin-bottom: 40px;}
+	.hd-title {font-size: 28px;}
+	.slide-text > span {font-size: 20px;}
+	.wl-txt > span {font-size: 16px;}
+	.input-field button {height: 50px;line-height: 50px;}
+	.sponsor-txt > h2 {font-size: 22px;line-height: 30px;}
+	.section-title.v2 > h3 {font-size: 24px;line-height: 30px;}
+	.price-col > h2 {font-size: 62px;}
+	.price-col h2 sup {font-size: 36px;}
+	.app-btns li {margin-bottom: 10px;}
+	.app-btns li:last-child {margin-bottom: 0;}
+	.main-banner-hp3 {padding-bottom: 70px;}
+	.musicc-controls .munote-playyer .musicc-controls {padding: 0 20px;}
+}
+

@@ -1,0 +1,369 @@
+
+
+
+.rtl {
+	direction: rtl;
+}
+.rtl .tp-links li:first-child {
+	border-right: 0;
+}
+.rtl .tp-links li:last-child {
+	border-right: 1px solid #555555;
+}
+.rtl .tp-links li:first-child {
+	padding-left: 17px;
+	padding-right: 0;
+}
+.rtl .social-links {
+	float: left;
+}
+.rtl .menu-btn {
+	margin-right: auto;
+	margin-left: 25px;
+}
+.rtl header nav {
+	margin-right: auto;
+}
+.rtl .search-form button {
+	right: auto;
+	left: 0;
+}
+.rtl .newsletter-form .input-field button {
+	right: auto;
+	left: -70px;
+}
+.rtl .newsletter-form span.env:before {
+	right: auto;
+	left: 0;
+}
+.rtl .input-field input {
+	padding-right: 15px;
+	padding-left: 0;
+}
+.rtl .newsletter-form {
+	padding-left: 0;
+	padding-right: 50px;
+}
+.rtl .btm-links {
+	text-align: left;
+}
+.rtl .copyright-txt {
+	text-align: left;
+}
+.rtl .btm-links li:last-child {
+	padding-right: 20px;
+	padding-left: 0;
+}
+.rtl .btm-links li:before {
+	right: 100%;
+	left: auto;
+}
+.rtl .breadcrumb li:last-child {
+	padding-right: 20px;
+	padding-left: 0;
+}
+.rtl .breadcrumb li:before {
+	left: auto;
+	right: 100%;
+}
+.rtl .breadcrumb li:first-child {
+	padding-right: 0;
+}
+.rtl .blog-post.v2 .like-post {
+	right: auto;
+	left: 20px;
+}
+.rtl .pod-meta li {
+	margin-right: 0;
+	margin-left: 33px;
+}
+.rtl .pod-meta li i {
+	margin-right: 0;
+	margin-left: 3px;
+}
+.rtl .blog-post.v2 .blog-info > h2 {
+	padding-right: 0;
+	padding-left: 30px;
+}
+.rtl .points li:before {
+	left: auto;
+	right: 0;
+}
+.rtl .points li {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.rtl .mss-player {
+	right: 0;
+}
+.rtl .posted_by:before {
+	left: auto;
+	right: 0;
+}
+.rtl .posted_by > span i {
+	margin-right: 0;
+	margin-left: 4px;
+}
+.rtl .social_links {
+	text-align: left !important;
+}
+.rtl .comnt-info > span {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.rtl .comnt-info {
+	padding-left: 0;
+	padding-right: 20px;
+}
+.rtl .sidebar .widget-title:before {
+	left: auto;
+	right: 0;
+}
+.rtl .wid-info > span i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.rtl .wid-info > h3 {
+	padding-right: 0;
+	padding-left: 20px;
+}
+.rtl .wid-info {
+	padding-left: 0;
+	padding-right: 20px;
+}
+.rtl .categories-lzt li > span {
+	margin-right: auto;
+	margin-left: initial;
+}
+.rtl .wd-recent-video .mss-player {
+	left: auto;
+	right: 30px;
+}
+.rtl .widget-meta ul li:before {
+	left: auto;
+	right: 0;
+}
+.rtl .widget-meta ul li {
+	padding-left: 0;
+	padding-right: 17px;
+}
+.rtl .pagination li {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.rtl .text-left {
+	text-align: right !important;
+}
+.rtl .text-right {
+	text-align: left !important;
+}
+.rtl .blog-info > h2 {
+	padding-right: 0;
+	padding-left: 30px;
+}
+.rtl .blog-posts.v-4 .blog-post .blog-info > a i {
+	margin-left: 0;
+	margin-right: 5px;
+}
+.rtl .sb-title:before {
+	left: auto;
+	right: 0;
+}
+.rtl .contact-dtts li > i {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.rtl .socio-links li {
+	margin-right: 0;
+	margin-left: 7px;
+}
+.rtl .socio-links li:last-child {
+	margin-left: 0;
+}
+.rtl .alert-notice > img {
+	margin-right: 0;
+	margin-left: 8px;
+}
+.rtl .progress .progress-bar {
+	text-align: left;
+	padding-left: 20px;
+}
+.rtl .method-optz li {
+	margin-right: 0;
+	margin-left: 25px;
+}
+.rtl .method-optz li:last-child {
+	margin-left: 0;
+}
+.rtl .lg-form .form-group button + a {
+	margin-left: 0;
+	margin-right: 35px;
+}
+
+.rtl .slick-slider .slick-track, .slick-slider .slick-list {
+	direction: ltr;
+}
+.rtl .featez-list li:before {
+	left: auto;
+	right: 0;
+}
+.rtl .featez-list li {
+	padding-left: 0;
+	padding-right: 25px;
+}
+.rtl .btns-lz li {
+	margin-right: 0;
+	margin-left: 6px;
+}
+.rtl .btns-lz li:last-child {
+	margin-left: 0;
+}
+.rtl .infor-txt > h2:before {
+	left: auto;
+	right: 0;
+}
+.rtl .infor-txt {
+	padding-right: 0;
+	padding-left: 50px;
+}
+.rtl .podcast-img {
+	padding-left: 0;
+	padding-right: 0;
+}
+.rtl .munote-playyer .jp-title:before {
+	left: auto;
+	right: 0;
+}
+.rtl .munote-playyer .jp-title:after {
+	left: auto;
+	right: 5px;
+}
+.rtl .musicc-controls .munote-playyer .jp-title {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.rtl .munote-playyer .jp-previous {
+	left: auto;
+	right: 15px;
+}
+.rtl .munote-playyer .jp-next {
+	left: auto;
+	right: -10px;
+}
+.rtl .load-more .btn-default i {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.rtl .listen-on > h3 {
+	margin-right: 0;
+	margin-left: 21px;
+}
+.rtl .social-links li {
+	margin-right: 0;
+	margin-left: 1px;
+}
+.rtl .music-show .mss-player {
+	right: auto;
+	left: 20px;
+}
+.rtl .show-fig {
+	text-align: right;
+}
+.rtl .rad-status {
+	right: auto;
+	left: 10px;
+}
+.rtl .songs-list li > h3 {
+	padding-left: 0;
+	padding-right: 8px;
+}
+.rtl .pod-meta li i {
+	margin-left: 0;
+	margin-right: 3px;
+}
+.rtl .post p {
+	padding-right: 0;
+	padding-left: 50px;
+}
+.rtl .posted-by > strong {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.rtl .posted-by > span {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.rtl .listen-dv > ul li > h4 {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.rtl .listen-dv > ul {
+	padding-left: 0;
+	padding-right: 50px;
+}
+.rtl .donate-img {
+	padding-left: 0;
+	padding-right: 60px;
+}
+.rtl .donate-img:before {
+	right: auto;
+	left: -10px;
+}
+.rtl .radio-player > h3 {
+	padding-left: 0;
+	padding-right: 17px;
+}
+.rtl .radio-player {
+	text-align: right;
+}
+.rtl .radio-stations table tbody td:first-child {
+	padding-left: 0;
+	padding-right: 40px;
+}
+.rtl .ms-title:before {
+	left: auto;
+	right: 0;
+}
+.rtl .munote-playyer .jp-title {
+	padding-left: 0;
+	padding-right: 30px;
+}
+.rtl .munote-playyer .jp-volume-controls {
+	left: 0;
+}
+.rtl .wlc-sec .col-lg-5.ml-auto {
+	margin-left: initial !important;
+    margin-right: auto !important;
+}
+.rtl .wl-txt {
+	margin-left: -50px;
+}
+.rtl .app-txt > h2 {
+	padding-right: 0;
+	padding-left: 50px;
+}
+.rtl .stz-list li > p {
+	padding: 0 15px 0 20px;
+	text-align: right;
+}
+.rtl .listen-dv > ul li {
+	margin-right: 0;
+	margin-left: 23px;
+}
+.rtl .listen-dv > ul li:last-child {
+	margin-left: 0;
+}
+.rtl .like-post {
+	right: auto;
+	left: 15px;
+}
+
+
+
+.rtl .color-schemes ul li {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.rtl .color-schemes ul li:last-child {
+	margin-left: 0;
+}

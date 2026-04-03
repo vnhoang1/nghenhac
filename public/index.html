@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MuNote Listen Together</title>
+  <link rel="icon" href="/munote-images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/munote-css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/all.min.css">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="landing-body">
+  <div class="landing-shell">
+    <header class="landing-header">
+      <div class="container landing-header-inner">
+        <a href="/" class="landing-logo"><img src="/munote-images/logo.png" alt="MuNote"></a>
+        <nav class="landing-nav">
+          <a href="#gioi-thieu">Giới thiệu</a>
+          <a href="#cach-hoat-dong">Cách hoạt động</a>
+          <a href="#bat-dau">Bắt đầu</a>
+        </nav>
+        <div class="landing-auth-actions">
+          <button id="openLoginBtn" class="btn-ghost">Đăng nhập</button>
+          <button id="openRegisterBtn" class="btn-solid">Đăng ký</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="landing-hero" id="gioi-thieu">
+        <div class="container landing-hero-grid">
+          <div class="landing-copy">
+            <span class="landing-kicker">Nghe cùng nhau theo room</span>
+            <h1>MuNote Listen Together</h1>
+            <p>
+              Một web nghe YouTube cùng bạn bè theo thời gian thực. Tạo phòng, mời thành viên,
+              chat ngay trong lúc nghe và để chủ phòng quản lý trải nghiệm chung.
+            </p>
+            <div class="landing-cta-row" id="bat-dau">
+              <button id="createRoomBtn" class="btn-solid btn-large">Tạo phòng nghe</button>
+              <button id="goDemoBtn" class="btn-ghost btn-large">Vào phòng demo</button>
+            </div>
+            <div class="landing-session" id="sessionBox"></div>
+          </div>
+          <div class="landing-card-stack">
+            <div class="landing-info-card">
+              <span class="card-badge">Chủ phòng</span>
+              <h3>Quản lý phòng nghe</h3>
+              <p>Có thể kick thành viên hoặc trao quyền quản lý cho người khác trong phòng.</p>
+            </div>
+            <div class="landing-info-card muted">
+              <span class="card-badge">Thành viên</span>
+              <h3>Tham gia nhanh</h3>
+              <p>Chỉ cần đăng nhập rồi nhập đúng Room ID để vào nghe, chat và thêm bài.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="landing-features" id="cach-hoat-dong">
+        <div class="container feature-grid-landing">
+          <article class="feature-landing-card">
+            <h3>Trang chủ gọn</h3>
+            <p>Home page chỉ giới thiệu cơ bản, tập trung vào việc bắt đầu thật nhanh.</p>
+          </article>
+          <article class="feature-landing-card">
+            <h3>Phòng nghe riêng</h3>
+            <p>Nút tạo phòng sẽ đưa bạn sang giao diện nghe nhạc đầy đủ như bản cũ.</p>
+          </article>
+          <article class="feature-landing-card">
+            <h3>Phân quyền rõ</h3>
+            <p>Trong mỗi phòng sẽ có vai trò chủ phòng và thành viên để quản lý dễ hơn.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="authModal" class="auth-modal hidden">
+    <div class="auth-backdrop" data-close-auth></div>
+    <div class="auth-panel">
+      <button class="auth-close" data-close-auth>&times;</button>
+      <div class="auth-tabs">
+        <button id="tabLogin" class="active">Đăng nhập</button>
+        <button id="tabRegister">Đăng ký</button>
+      </div>
+      <form id="loginForm" class="auth-form">
+        <h3>Đăng nhập</h3>
+        <input id="loginEmail" type="email" placeholder="Email" required>
+        <input id="loginPassword" type="password" placeholder="Mật khẩu" required>
+        <button class="btn-solid" type="submit">Đăng nhập</button>
+      </form>
+      <form id="registerForm" class="auth-form hidden">
+        <h3>Đăng ký</h3>
+        <input id="registerName" type="text" placeholder="Tên hiển thị" required>
+        <input id="registerEmail" type="email" placeholder="Email" required>
+        <input id="registerPassword" type="password" placeholder="Mật khẩu" required>
+        <button class="btn-solid" type="submit">Tạo tài khoản</button>
+      </form>
+      <p id="authMessage" class="auth-message"></p>
+    </div>
+  </div>
+
+  <script>
+    const AUTH_KEY = 'munote_auth_user';
+    const USERS_KEY = 'munote_auth_users';
+
+    const modal = document.getElementById('authModal');
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
+    const tabLogin = document.getElementById('tabLogin');
+    const tabRegister = document.getElementById('tabRegister');
+    const authMessage = document.getElementById('authMessage');
+    const sessionBox = document.getElementById('sessionBox');
+
+    function getUsers() {
+      try { return JSON.parse(localStorage.getItem(USERS_KEY) || '[]'); } catch (_) { return []; }
+    }
+
+    function setUsers(users) {
+      localStorage.setItem(USERS_KEY, JSON.stringify(users));
+    }
+
+    function getCurrentUser() {
+      try { return JSON.parse(localStorage.getItem(AUTH_KEY) || 'null'); } catch (_) { return null; }
+    }
+
+    function setCurrentUser(user) {
+      localStorage.setItem(AUTH_KEY, JSON.stringify(user));
+      renderSession();
+    }
+
+    function randomRoomId() {
+      return 'room-' + Math.random().toString(36).slice(2, 8);
+    }
+
+    function showAuth(mode) {
+      modal.classList.remove('hidden');
+      if (mode === 'register') {
+        tabRegister.click();
+      } else {
+        tabLogin.click();
+      }
+    }
+
+    function hideAuth() {
+      modal.classList.add('hidden');
+      authMessage.textContent = '';
+    }
+
+    function renderSession() {
+      const user = getCurrentUser();
+      if (!user) {
+        sessionBox.innerHTML = '<span class="session-pill">Bạn chưa đăng nhập</span>';
+        return;
+      }
+      sessionBox.innerHTML = `
+        <div class="session-user-box">
+          <div>
+            <strong>${user.name}</strong>
+            <span>${user.email}</span>
+          </div>
+          <button id="logoutBtn" class="btn-ghost small-btn">Đăng xuất</button>
+        </div>
+      `;
+      document.getElementById('logoutBtn').onclick = () => {
+        localStorage.removeItem(AUTH_KEY);
+        renderSession();
+      };
+    }
+
+    function goToRoom(roomId) {
+      const user = getCurrentUser();
+      if (!user) {
+        showAuth('login');
+        authMessage.textContent = 'Bạn cần đăng nhập trước khi vào phòng.';
+        return;
+      }
+      window.location.href = `/room/${encodeURIComponent(roomId)}`;
+    }
+
+    document.getElementById('createRoomBtn').onclick = () => goToRoom(randomRoomId());
+    document.getElementById('goDemoBtn').onclick = () => goToRoom('main-room');
+    document.getElementById('openLoginBtn').onclick = () => showAuth('login');
+    document.getElementById('openRegisterBtn').onclick = () => showAuth('register');
+
+    document.querySelectorAll('[data-close-auth]').forEach((node) => {
+      node.onclick = hideAuth;
+    });
+
+    tabLogin.onclick = () => {
+      tabLogin.classList.add('active');
+      tabRegister.classList.remove('active');
+      loginForm.classList.remove('hidden');
+      registerForm.classList.add('hidden');
+      authMessage.textContent = '';
+    };
+
+    tabRegister.onclick = () => {
+      tabRegister.classList.add('active');
+      tabLogin.classList.remove('active');
+      registerForm.classList.remove('hidden');
+      loginForm.classList.add('hidden');
+      authMessage.textContent = '';
+    };
+
+    registerForm.onsubmit = (e) => {
+      e.preventDefault();
+      const name = document.getElementById('registerName').value.trim();
+      const email = document.getElementById('registerEmail').value.trim().toLowerCase();
+      const password = document.getElementById('registerPassword').value;
+      const users = getUsers();
+      if (users.some((u) => u.email === email)) {
+        authMessage.textContent = 'Email này đã tồn tại.';
+        return;
+      }
+      const user = { name, email, password };
+      users.push(user);
+      setUsers(users);
+      setCurrentUser({ name, email });
+      hideAuth();
+    };
+
+    loginForm.onsubmit = (e) => {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value.trim().toLowerCase();
+      const password = document.getElementById('loginPassword').value;
+      const user = getUsers().find((u) => u.email === email && u.password === password);
+      if (!user) {
+        authMessage.textContent = 'Sai email hoặc mật khẩu.';
+        return;
+      }
+      setCurrentUser({ name: user.name, email: user.email });
+      hideAuth();
+    };
+
+    renderSession();
+  </script>
+</body>
+</html>

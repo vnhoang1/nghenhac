@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Phòng nghe | MuNote Listen Together</title>
+  <meta name="description" content="Giao diện MuNote tích hợp app nghe YouTube cùng nhau" />
+  <link rel="icon" href="/munote-images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="/munote-css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/flaticon.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/style.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/color.css">
+  <link rel="stylesheet" type="text/css" href="/munote-css/responsive.css">
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="wrapper listen-shell">
+    <header class="listen-topbar-wrap">
+      <div class="top-header listen-topbar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-8 col-lg-7 col-md-6">
+              <ul class="tp-links">
+                <li><a href="#listen-room">Phòng nghe</a></li>
+                <li><a href="#queue-area">Hàng chờ</a></li>
+                <li><a href="#chat-area">Trò chuyện</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-6 mll-auto">
+              <div class="room-top-actions"><a href="/" class="login"><i class="flaticon-user"></i>Home</a><div id="authStatusTop" class="auth-status-top"></div></div>
+              <ul class="social-links">
+                <li><a href="#listen-room"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#queue-area"><i class="fas fa-list"></i></a></li>
+                <li><a href="#chat-area"><i class="fab fa-telegram-plane"></i></a></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header listen-navbar">
+        <div class="container">
+          <div class="header-content">
+            <div class="logo">
+              <a href="/" title=""><img src="/munote-images/logo.png" alt="MuNote"></a>
+            </div>
+            <nav>
+              <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#listen-room">Player</a></li>
+                <li><a href="#queue-area">Queue</a></li>
+                <li><a href="#chat-area">Chat</a></li>
+              </ul>
+            </nav>
+            <a href="#listen-room" class="btn-default btn-primary-hero"><i class="fa fa-play"></i>Bắt đầu nghe <span></span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-banner overlay listen-hero-banner">
+      <div class="container">
+        <div class="listen-hero-grid">
+          <div class="banner-text listen-hero-copy">
+            <span class="listen-kicker">Realtime listening room</span>
+            <h1>MuNote<br><strong>x Listen Together</strong></h1>
+            <p>Tích hợp app nghe YouTube cùng nhau vào giao diện podcast/audio gọn, tối, hiện đại và tập trung hơn vào trải nghiệm nghe.</p>
+            <div class="listen-hero-actions">
+              <a href="#listen-room" class="btn-default btn-primary-hero"><i class="fa fa-headphones"></i>Vào player <span></span></a>
+              <a href="#queue-area" class="btn-default btn-secondary-hero">Xem hàng chờ <span></span></a>
+            </div>
+            <div class="listen-hero-stats">
+              <div>
+                <strong>Realtime sync</strong>
+                <span>Play, pause, seek theo room</span>
+              </div>
+              <div>
+                <strong>Queue chung</strong>
+                <span>Mọi người cùng thêm bài</span>
+              </div>
+              <div>
+                <strong>Chat + reaction</strong>
+                <span>Nhắn tin ngay lúc nghe</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="listen-join-card" id="join-panel">
+            <div class="listen-panel-top">
+              <span class="listen-pill">Vào phòng ngay</span>
+              <h3 id="roomHeroTitle">Bắt đầu một phiên nghe chung</h3>
+              <p>Mở 2 tab hoặc 2 máy cùng room để test sync realtime và chat trực tiếp.</p>
+            </div>
+            <div class="room-role-box">
+              <div>
+                <span class="meta-label">Vai trò của bạn</span>
+                <p id="myRoleLabel">Chưa vào phòng</p>
+              </div>
+              <div>
+                <span class="meta-label">Chủ phòng hiện tại</span>
+                <p id="ownerLabel">Chưa có</p>
+              </div>
+            </div>
+            <label for="nameInput">Tên hiển thị</label>
+            <input id="nameInput" placeholder="Tên của bạn" />
+            <label for="roomInput">Room ID</label>
+            <div class="listen-inline-form join-inline">
+              <input id="roomInput" placeholder="main-room" />
+              <button id="joinBtn" class="btn-default btn-solid-clean" type="button">Vào <span></span></button>
+            </div>
+            <div class="listen-mini-note">
+              <span class="dot"></span>
+              <small>Chủ phòng có thể kick member hoặc trao quyền quản lý cho thành viên khác.</small>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="block listen-feature-band">
+      <div class="container">
+        <div class="listen-feature-grid">
+          <div class="listen-feature-card">
+            <i class="fa fa-wave-square"></i>
+            <div>
+              <strong>Sync player theo room</strong>
+              <span>Đồng bộ play, pause, seek</span>
+            </div>
+          </div>
+          <div class="listen-feature-card">
+            <i class="fa fa-list"></i>
+            <div>
+              <strong>Queue chung</strong>
+              <span>Thêm, xoá, đổi thứ tự bài</span>
+            </div>
+          </div>
+          <div class="listen-feature-card">
+            <i class="fa fa-search"></i>
+            <div>
+              <strong>Tìm YouTube</strong>
+              <span>Search nhanh và đẩy vào queue</span>
+            </div>
+          </div>
+          <div class="listen-feature-card">
+            <i class="fa fa-comments"></i>
+            <div>
+              <strong>Chat + gửi ảnh</strong>
+              <span>Trò chuyện ngay trong phòng</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block listen-app-section" id="listen-room">
+      <div class="container">
+        <div class="listen-app-grid">
+          <section class="listen-card listen-player-card is-main">
+            <div class="listen-card-head modern-head">
+              <div>
+                <span class="listen-eyebrow">Now playing</span>
+                <h3>Realtime player</h3>
+              </div>
+              <span class="listen-status" id="statusBadge">Offline</span>
+            </div>
+
+            <div class="now-playing-shell">
+              <div class="now-artwork" id="currentArtwork">
+                <div class="now-artwork-overlay"></div>
+                <div class="now-artwork-content">
+                  <span class="listen-pill subtle">Đang phát</span>
+                  <h4 id="currentTitle">Chưa có bài nào</h4>
+                  <p id="trackMeta">Tham gia một room để bắt đầu nghe.</p>
+                </div>
+              </div>
+              <div id="playerWrap">
+                <div id="player"></div>
+              </div>
+            </div>
+
+            <div class="player-actions-row">
+              <div class="listen-controls control-cluster primary-controls">
+                <button id="playBtn" type="button">Phát</button>
+                <button id="pauseBtn" type="button" class="ghost">Tạm dừng</button>
+                <button id="nextBtn" type="button" class="ghost">Bài tiếp theo</button>
+              </div>
+              <div class="listen-controls control-cluster reaction-controls">
+                <button class="ghost icon-only" data-reaction="❤️" type="button">❤️</button>
+                <button class="ghost icon-only" data-reaction="😂" type="button">😂</button>
+                <button class="ghost icon-only" data-reaction="🔥" type="button">🔥</button>
+              </div>
+            </div>
+
+            <div class="volume-card">
+              <button id="muteBtn" class="ghost icon-only" title="Tắt/bật tiếng" type="button">🔊</button>
+              <input type="range" id="volumeSlider" min="0" max="100" value="80" step="1" />
+              <span id="volumeLabel">80%</span>
+            </div>
+
+            <div class="listen-meta-box">
+              <div>
+                <span class="meta-label">Trạng thái phòng</span>
+                <p id="roomSummary">Chưa kết nối</p>
+              </div>
+              <div class="reactions" id="reactions"></div>
+            </div>
+          </section>
+
+          <div class="listen-side-stack">
+            <section class="listen-card queue-card" id="queue-area">
+              <div class="listen-card-head modern-head compact-head">
+                <div>
+                  <span class="listen-eyebrow">Queue</span>
+                  <h3>Hàng chờ chung</h3>
+                  <p>Ai cũng có thể thêm, chọn, xoá hoặc đổi thứ tự bài.</p>
+                </div>
+              </div>
+
+              <label for="urlInput">Link YouTube</label>
+              <div class="listen-inline-form">
+                <input id="urlInput" placeholder="https://www.youtube.com/watch?v=..." />
+                <button id="addBtn" class="btn-default btn-solid-clean" type="button">Thêm <span></span></button>
+              </div>
+
+              <label for="searchInput">Tìm bài trên YouTube</label>
+              <div class="search-box">
+                <input id="searchInput" placeholder="Tìm tên bài hát, ca sĩ..." autocomplete="off" />
+                <button id="searchBtn" class="btn-default btn-solid-clean" type="button">Tìm <span></span></button>
+              </div>
+
+              <div id="searchResults" class="search-results"></div>
+              <div id="queueList" class="queue-list"></div>
+            </section>
+
+            <section class="listen-card chat-card" id="chat-area">
+              <div class="listen-card-head modern-head compact-head">
+                <div>
+                  <span class="listen-eyebrow">Chat room</span>
+                  <h3>Trò chuyện</h3>
+                  <p>Nhắn tin, gửi ảnh và xem thành viên đang online.</p>
+                </div>
+              </div>
+              <div class="members-panel"><div class="members-panel-head"><span class="listen-eyebrow">Thành viên</span><button id="leaveRoomBtn" class="ghost small-chip" type="button">Rời phòng</button></div><div id="memberList" class="members members-advanced"></div></div>
+              <div id="chatList" class="chat-list"></div>
+              <div class="listen-inline-form sticky-input">
+                <input id="chatInput" placeholder="Nhắn tin..." />
+                <input type="file" id="imageInput" accept="image/*" style="display:none" />
+                <button id="imageBtn" class="ghost icon-only" type="button">🖼️</button>
+                <button id="sendBtn" class="btn-default btn-solid-clean" type="button">Gửi <span></span></button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+  <script>
+  (function(){
+    const user = JSON.parse(localStorage.getItem("munote_auth_user") || "null");
+    const authTop = document.getElementById("authStatusTop");
+    const params = new URLSearchParams(window.location.search);
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const roomFromPath = pathParts[0] === 'room' ? decodeURIComponent(pathParts[1] || '') : '';
+    const room = roomFromPath || params.get("room") || "main-room";
+    document.getElementById("roomInput").value = room;
+    document.getElementById("roomHeroTitle").textContent = `Phòng ${room}`;
+    if (!user) { window.location.href = "/"; return; }
+    document.getElementById("nameInput").value = user.name || "";
+    authTop.innerHTML = `<span class="auth-user-pill">${user.name}</span><a class="login" href="/">Đổi tài khoản</a>`;
+    document.getElementById("leaveRoomBtn").onclick = () => { window.location.href = "/"; };
+  })();
+  </script>
+</body>
+</html>
